@@ -4,6 +4,5 @@ COPY . /var/www/html/
 
 EXPOSE 8080
 
-bash
 docker build -t php-controller .
 docker run -d -p 8080:80 php-controller
