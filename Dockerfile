@@ -1,7 +1,9 @@
-FROM php:8.2-cli
+FROM php:8.2-apache
 
-WORKDIR /app
+COPY . /var/www/html/
 
-COPY . /app
+EXPOSE 80
 
-CMD ["php", "controller.php"]
+bash
+docker build -t php-controller .
+docker run -d -p 8080:80 php-controller
