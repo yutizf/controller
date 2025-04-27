@@ -1,5 +1,5 @@
 {
-    "name": "controller",
+    "name": "controller/controller",
     "description": "Proyecto PHP sencillo para Railway",
     "require": {}
   }
